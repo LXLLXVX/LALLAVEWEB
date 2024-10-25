@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #f39604;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    background-image: url('fotos/baloncesto-textura.jpg');
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+h1.nombre {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.nombre img {
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul.menu li {
+    margin: 0 15px;
+}
+
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul.menu li a:hover {
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+
+.banner {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    background-color: #002B5C;
+    padding: 10px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.proximos-partidos {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: #FFD700; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proximos-partidos h2 {
+    color: #002147; 
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.proximos-partidos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.proximos-partidos th,
+.proximos-partidos td {
+    padding: 12px;
+    border: 1px solid #002147;
+    text-align: center;
+    font-size: 1em;
+}
+
+.proximos-partidos th {
+    background-color: #002147; /* Azul oscuro */
+    color: #FFD700; /* Amarillo dorado */
+    font-weight: bold;
+}
+
+.proximos-partidos tr:nth-child(even) {
+    background-color: #FFF8DC; /* Color amarillo claro */
+}
+
+.proximos-partidos tr:hover {
+    background-color: #FFEC8B; /* Color amarillo suave */
+}
+
+.proximos-partidos td {
+    color: #333;
+}
+
+
+
+
+
+
+.contacto {
+    background-color: #fff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #002B5C;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    color: #002B5C;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #FFD700;
+    color: #002B5C;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    transition: background-color 0.3s ease;
+}
+
+.ubicacion {
+    text-align: center;
+    padding: 40px;
+    background-color: #002B5C;
+    color: white;
+}
+
+.ubicacion h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+    }
+
+    nav ul.menu li {
+        margin: 10px 0;
+    }
+
+    .contacto {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+.footer {
+    background-color: #0A3D7D; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.footer .social-icons {
+    margin-bottom: 10px; /* Espacio entre íconos y texto */
+}
+
+.footer .social-icons a {
+    color: white; /* Color de los iconos */
+    margin: 0 10px; /* Espacio entre íconos */
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave para color */
+}
+
+.footer .social-icons a:hover {
+    color: #FFD700; /* Color dorado al pasar el ratón */
+}
+/* Estilos para centrar .contact-item y hacerlo responsive */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact-item input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-item button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Color del equipo */
+    color: #002B5C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-item button:hover {
+    background-color: #ffcc00; /* Color de hover */
+}
+
+/* Media Queries para hacer responsive contact-item y footer */
+@media (max-width: 768px) {
+    .contact-item {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer .social-icons a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer .social-icons a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
