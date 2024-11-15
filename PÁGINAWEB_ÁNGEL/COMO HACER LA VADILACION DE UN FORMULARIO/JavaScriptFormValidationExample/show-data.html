@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/show-data.css">
+</head>
+
+<body>
+  <header class="header-container">
+    <div>
+      <i class="fa-solid fa-bicycle"></i><span id="header-title"> Bicycles</span>
+    </div>
+
+    <ul id="header-menu-main-options">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="show-data.html">Show data</a></li>
+    </ul>
+
+    <ul id="header-menu" class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="show-data.html">Show data</a></li>
+      <li><a href="#">More options</a></li>
+      <li><a href="#">Scenes</a></li>
+      <li><a href="#">Extras</a></li>
+    </ul>
+
+    <div id="header-hamburger" >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Datos introducidos en el formulario</h1>
+    <!-- DECOMMENT: STEP 7: Show in the HTML page the elements which will contain the data entered in the form -->
+    <div class="data-container">
+      <p class="data-item"><strong>Name:</strong></p>
+      <p class="data-value" id="name"></p>
+      <p class="data-item"><strong>Surname:</strong></p>
+      <p class="data-value" id="surname"></p>
+      <p class="data-item"><strong>Email:</strong></p>
+      <p class="data-value" id="email"></p>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/361128a480.js" crossorigin="anonymous"></script>
+  <script src="js/toggle-menu.js"></script>
+  
+  <!-- DECOMMENT: STEP 8: Create a JavaScript file to show data in js/show-data.js -->
+  <script src="js/show-data.js"></script>
+</body>
+
+</html>

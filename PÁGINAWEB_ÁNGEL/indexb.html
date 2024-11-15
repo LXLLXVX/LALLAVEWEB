@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>GRANCANARIA BALONCESTO</title>
-    <link rel="stylesheet" href="CSS/style2.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <title>GRANCANARIA BALONCESTO</title>
+  <link rel="stylesheet" href="CSS/style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 
 <body>
 
-    <header class="header-container">
-        <h1 class="nombre">
-            <img style="width: 40px;" src="https://studiosdreamland.com/favicon.ico" alt="Logo Dreamland">
-            DREAMLAND GRAN CANARIA BALONCESTO
-            <img style="width: 40px;" src="https://studiosdreamland.com/favicon.ico" alt="Logo Dreamland">
-        </h1>
+  <header class="header-container">
+    <h1 class="nombre">
+      <img style="width: 40px;" src="https://studiosdreamland.com/favicon.ico" alt="Logo Dreamland">
+      DREAMLAND GRAN CANARIA BALONCESTO
+      <img style="width: 40px;" src="https://studiosdreamland.com/favicon.ico" alt="Logo Dreamland">
+    </h1>
 
-        
-        <nav>
-            <ul class="menu">
-                <li><a href="indexb.html"> INICIO </a></li>
-                <li><a href="https://online.cbgrancanaria.net/shop"> TIENDA </a></li>
-                <li><a href="indexjg.html"> JUGADORES </a></li>
-                <li><a href="indexplant.html"> PLANTILLA </a></li>
-                <li><a href="indexnot.html"> NOTICIAS </a></li>
-                <li><a href="indexhist.html"> HISTORIA </a></li>
-                <li><a href="indexcnt.html"> CONTACTO </a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="indexb.html"> INICIO </a></li>
+        <li><a href="https://online.cbgrancanaria.net/shop"> TIENDA </a></li>
+        <li><a href="indexabonado.html"> ABONADOS </a></li>
+        <li><a href="indexplant.html"> PLANTILLA </a></li>
+        <li><a href="indexnot.html"> NOTICIAS </a></li>
+        <li><a href="indexhist.html"> HISTORIA </a></li>
+        <li><a href="indexcnt.html"> CONTACTO </a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="banner">
-        <img src="fotos/banner_campana_nuevos_abonados-T2425-600x200.gif" alt="Campaña de Nuevos Abonados">
+  <div class="banner">
+    <img src="fotos/banner_campana_nuevos_abonados-T2425-600x200.gif" alt="Campaña de Nuevos Abonados">
+  </div>
+
+  <div class="proximos-partidos">
+    <h2>Próximos Partidos</h2>
+    <table>
+      <tr>
+        <th>Fecha</th>
+        <th>Rival</th>
+        <th>Lugar</th>
+      </tr>
+      <tr>
+        <td>28 Octubre 2024</td>
+        <td>Real Madrid</td>
+        <td>Gran Canaria Arena</td>
+      </tr>
+      <tr>
+        <td>5 Noviembre 2024</td>
+        <td>Barcelona</td>
+        <td>Palau Blaugrana</td>
+      </tr>
+      <tr>
+        <td>12 Noviembre 2024</td>
+        <td>Unicaja</td>
+        <td>Gran Canaria Arena</td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+  <div class="ubicacion">
+    <h2>Ubicación del Templo</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.428969494548!2d-15.459471724731266!3d28.102956075958097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4095c7faf13115%3A0xee8943e7c62dfb8a!2sGran%20Canaria%20Arena!5e0!3m2!1ses!2ses!4v1729781410256!5m2!1ses!2ses"
+      style="width: 100%;height: 450px;border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <div class="contact-item">
+    <h3><u>DIRECCIÓN</u></h3>
+    <input type="text" placeholder="Introduce tu dirección">
+    <button onclick="showAlert()">Enviar</button>
+  </div>
+
+  <div class="contact-item">
+    <h3><u>TELÉFONO/FAX</u></h3>
+    <input type="tel" placeholder="Introduce tu teléfono">
+    <button onclick="showAlert()">Enviar</button>
+  </div>
+
+  <div class="contact-item">
+    <h3><u>CORREO</u></h3>
+    <input type="email" placeholder="Introduce tu correo">
+    <button onclick="showAlert()">Enviar</button>
+  </div>
+
+  <div class="new-footer">
+    <div>
+      <h3>ENLACES DE INTERES</h3>
+      <p>Clasificación Liga ACB</p>
+      <p>Clasificación Eurocup</p>
+      <p>Clasificación Euroliga</p>
+
     </div>
-
-
-    <div class="proximos-partidos">
-        <h2>Próximos Partidos</h2>
-        <table>
-            <tr>
-                <th>Fecha</th>
-                <th>Rival</th>
-                <th>Lugar</th>
-            </tr>
-            <tr>
-                <td>28 Octubre 2024</td>
-                <td>Real Madrid</td>
-                <td>Gran Canaria Arena</td>
-            </tr>
-            <tr>
-                <td>5 Noviembre 2024</td>
-                <td>Barcelona</td>
-                <td>Palau Blaugrana</td>
-            </tr>
-            <tr>
-                <td>12 Noviembre 2024</td>
-                <td>Unicaja</td>
-                <td>Gran Canaria Arena</td>
-            </tr>
-        </table>
+    <div>
+      <h3>JUGADORES</h3>
+      <p>Lesiones</p>
+      <p>Meeting Point</p>
+      <p>Información</p>
     </div>
+    <div>
+      <h3>FORO</h3>
+      <p>Abonados</p>
+      <p>Campaña Abonados</p>
+      <p>Preguntas Frecuentes</p>
+    </div>
+    <div>
+      <h3>NOTICIAS</h3>
+      <p>Marca</p>
+      <p>Diario AS</p>
+      <p>Sport</p>
+    </div>
+    <div>
+      <h3>PLANTILLA</h3>
+      <p>Jugadores</p>
+      <p>Tácticas</p>
+      <p>Quintetos</p>
+    </div>
+    <div>
+      <h3>EQUIPO</h3>
+      <p>Entrenador</p>
+      <p>Patrocinadores</p>
+      <p>Equipo Sanitario</p>
+    </div>
+  </div>
 
-    <br>
-    <div class="ubicacion">
-            <h2>Ubicación del Templo</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.428969494548!2d-15.459471724731266!3d28.102956075958097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4095c7faf13115%3A0xee8943e7c62dfb8a!2sGran%20Canaria%20Arena!5e0!3m2!1ses!2ses!4v1729781410256!5m2!1ses!2ses" 
-            style="width: 100%;height: 450px;border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-        <div class="contact-item">
-            <h3><u>DIRECCIÓN</u></h3>
-            <input type="text" placeholder="Introduce tu dirección">
-            <button onclick="showAlert()">Enviar</button>
-        </div>
-        
-        <div class="contact-item">
-            <h3><u>TELÉFONO/FAX</u></h3>
-            <input type="tel" placeholder="Introduce tu teléfono">
-            <button onclick="showAlert()">Enviar</button>
-        </div>
-        
-        <div class="contact-item">
-            <h3><u>CORREO</u></h3>
-            <input type="email" placeholder="Introduce tu correo">
-            <button onclick="showAlert()">Enviar</button>
-        </div>
-        
-
-
-
-
-</body>
-<footer class="footer">
+  <footer class="footer">
     <div class="container">
-        <div class="social-icons">
-            <a href="https://www.facebook.com/GranCanariaCB" target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://twitter.com/GranCanariaCB" target="_blank">
-                <i class="bi bi-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/grancanariacb/" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCvUuE1j3mR0vXHBr1U1p7_w" target="_blank">
-                <i class="bi bi-youtube"></i>
-            </a>
-        </div>
-        <p>© 2024 ÁNGEL LALLAVE HERRERA.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/GranCanariaCB" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/GranCanariaCB" target="_blank">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/grancanariacb/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCvUuE1j3mR0vXHBr1U1p7_w" target="_blank">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+      <p>© 2024 ÁNGEL LALLAVE HERRERA.</p>
     </div>
-</footer>
 
-
-<script src="JAVA/index.js"></script>
+  </footer>
+  <script src="JAVA/index.js"></script>
+</body>

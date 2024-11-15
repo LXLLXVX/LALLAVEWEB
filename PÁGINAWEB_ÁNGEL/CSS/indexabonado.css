@@ -1,0 +1,133 @@
+/* Estilos comunes para el header */
+.header-abonados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  /* Color de fondo del header */
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width: 50px;
+  /* Tamaño del logo */
+  height: auto;
+}
+
+.titulo-container {
+  flex: 2;
+  text-align: center;
+}
+
+.titulo-abonados {
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.subtitulo-abonados {
+  font-size: 1em;
+  margin: 0;
+  color: #555;
+}
+
+.nav-abonados {
+  flex: 3;
+}
+
+.nav-abonados ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-abonados a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  padding: 10px;
+  display: block;
+}
+
+.nav-abonados a:hover {
+  color: #ff9900;
+  /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+  .header-abonados {
+    flex-direction: row;
+  }
+
+  .titulo-container {
+    text-align: center;
+  }
+
+  .nav-abonados ul {
+    justify-content: space-around;
+  }
+}
+
+/* Estilos para tabletas (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-abonados {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-container {
+    margin-top: 10px;
+  }
+
+  .nav-abonados ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* Estilos para móviles (pantallas pequeñas) */
+@media (max-width: 767px) {
+  .header-abonados {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    width: 40px;
+    /* Ajusta el tamaño del logo en móviles */
+  }
+
+  .titulo-abonados {
+    font-size: 1.3em;
+  }
+
+  .subtitulo-abonados {
+    font-size: 0.9em;
+  }
+
+  .nav-abonados ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-abonados a {
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+}

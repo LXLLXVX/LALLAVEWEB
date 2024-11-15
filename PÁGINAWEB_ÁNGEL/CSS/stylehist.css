@@ -1,90 +1,184 @@
 .home-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .home-button img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .home-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
 }
 
 .HISTORIA {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .HISTORIA h2 {
-    color: #FFD700;
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
+  color: #FFD700;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 10px;
 }
 
 .HISTORIA p {
-    margin: 15px 0;
-    text-align: justify;
+  margin: 15px 0;
+  text-align: justify;
 }
 
 .HISTORIA img {
-    display: block;
-    margin: 10px auto;
-    width: 100%;
-    max-width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .HISTORIA hr {
-    border: none;
-    height: 2px;
-    background-color: #FFD700;
-    margin: 20px 0;
+  border: none;
+  height: 2px;
+  background-color: #FFD700;
+  margin: 20px 0;
 }
 
 .HISTORIA img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 600px) {
-    .HISTORIA {
-        padding: 15px;
-    }
-    
-    .HISTORIA h2 {
-        font-size: 1.8rem;
-    }
+  .HISTORIA {
+    padding: 15px;
+  }
 
-    .HISTORIA img {
-        max-width: 180px;
-    }
+  .HISTORIA h2 {
+    font-size: 1.8rem;
+  }
+
+  .HISTORIA img {
+    max-width: 180px;
+  }
 }
 
 
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .footer p {
+    font-size: 1em;
+  }
+}
+
+/* Estilos para tabletas (pantallas medianas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .footer p {
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+.footer {
+  background-color: #0A3D7D;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+  padding: 20px 0;
+  /* Espaciado interno */
+  text-align: center;
+  /* Centrar texto */
+}
+
+.footer .social-icons {
+  margin-bottom: 10px;
+  /* Espacio entre íconos y texto */
+}
+
+.footer .social-icons a {
+  color: white;
+  /* Color de los iconos */
+  margin: 0 10px;
+  /* Espacio entre íconos */
+  font-size: 24px;
+  /* Tamaño de los iconos */
+  transition: color 0.3s;
+  /* Transición suave para color */
+}
+
+.footer .social-icons a:hover {
+  color: #FFD700;
+
+  /* Color dorado al pasar el ratón */
+  /* Estilos para móviles (pantallas pequeñas) */
+  @media (max-width: 767px) {
+    .footer .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .social-icons {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      font-size: 1.3em;
+    }
+
+    .footer p {
+      font-size: 0.8em;
+    }
+  }
+}

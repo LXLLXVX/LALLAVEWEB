@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ABONADOS</title>
+  <link rel="stylesheet" href="CSS/style2.css">
+  <link rel="stylesheet" href="CSS/indexabonado.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header class="header-abonados">
+    <div class="logo-container">
+      <a href="indexb.html" class="home-button">
+        <img src="https://studiosdreamland.com/favicon.ico" alt="Logo Dreamland" class="logo">
+      </a>
+
+    </div>
+    <div class="titulo-container">
+      <h1 class="titulo-abonados">Zona Exclusiva para Abonados</h1>
+      <p class="subtitulo-abonados">Disfruta de beneficios únicos y vive el baloncesto de cerca</p>
+    </div>
+    <nav class="nav-abonados">
+      <ul>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#entradas">Reserva</a></li>
+        <li><a href="#foro">Foro Abonados</a></li>
+        <li><a href="#abonado">Entrada Abonado</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <!-- Apartado de noticias para abonados -->
+  <div class="seccion-abonados">
+    <h2>Noticias Exclusivas para Abonados</h2>
+    <ul>
+      <li>🎉 ¡Evento especial para abonados el próximo sábado! - <a href="#">Leer más</a></li>
+      <li>🏀 Entrevista exclusiva con el capitán del equipo - <a href="#">Ver entrevista</a></li>
+      <li>🎁 Sorteo de camisetas oficiales entre nuestros abonados - <a href="#">Participar</a></li>
+    </ul>
+  </div>
+
+  <!-- Ofertas exclusivas para abonados -->
+  <div class="ofertas-abonados">
+    <h2>Ofertas Especiales</h2>
+    <p>Accede a descuentos exclusivos:</p>
+    <ul>
+      <li>🔖 20% de descuento en la tienda oficial</li>
+      <li>🎟️ Descuento en entradas para familiares y amigos</li>
+      <li>🍔 Oferta especial en el bar del estadio</li>
+    </ul>
+  </div>
+
+  <!-- Zona de entradas para abonados -->
+  <div class="entradas-abonados">
+    <h2>Acceso a Entradas</h2>
+    <p>Reserva tus entradas para los próximos partidos:</p>
+    <form action="#" method="post">
+      <label for="partido">Selecciona el Partido:</label>
+      <select id="partido" name="partido">
+        <option value="real-madrid">Real Madrid vs Dreamland Gran Canaria</option>
+        <option value="barcelona">Barcelona vs Dreamland Gran Canaria</option>
+        <option value="unicaja">Unicaja vs Dreamland Gran Canaria</option>
+      </select>
+      <button type="submit">Reservar Entrada</button>
+    </form>
+  </div>
+
+  <!-- Foro para abonados -->
+  <div class="foro-abonados">
+    <h2>Foro Exclusivo para Abonados</h2>
+    <p>Comparte tus opiniones y experiencias:</p>
+    <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+    <button>Enviar Mensaje</button>
+  </div>
+
+  <div class="formulario-abonados">
+    <h2>SOLICITAR ENTRADA ABONADOS</h2>
+    <form id="formulario" action="#" method="post" onsubmit="return validarFormulario()">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre completo">
+      <div id="error-nombre" class="error-message"></div>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico">
+      <div id="error-email" class="error-message"></div>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono">
+      <div id="error-telefono" class="error-message"></div>
+
+      <label for="tipo-abono">Tipo de Abono:</label>
+      <select id="tipo-abono" name="tipo-abono">
+        <option value="">Seleccione un tipo de abono</option>
+        <option value="general">General</option>
+        <option value="vip">VIP</option>
+        <option value="familia">Familiar</option>
+        <option value="estudiante">Estudiante</option>
+      </select>
+      <div id="error-tipo-abono" class="error-message"></div>
+
+      <label for="num-abonado">Número de Abonado:</label>
+      <input type="text" id="num-abonado" name="num-abonado" placeholder="Introduce tu número de abonado">
+      <div id="error-num-abonado" class="error-message"></div>
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+      <div id="error-comentarios" class="error-message"></div>
+
+      <button type="submit">SOLICITAR ENTRADA</button>
+    </form>
+  </div>
+
+  <!-- Este es el contenedor donde aparecerán los datos introducidos -->
+  <div id="lista-abonados"></div>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/GranCanariaCB" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/GranCanariaCB" target="_blank">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/grancanariacb/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCvUuE1j3mR0vXHBr1U1p7_w" target="_blank">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+      <p>© 2024 ÁNGEL LALLAVE HERRERA.</p>
+    </div>
+
+  </footer>
+
+  <script src="JAVA/validacion-form.js"></script>
+  <!-- <script src="JAVA/CRUD.js"></script> -->
+<div id="lista-abonados"></div>
+
+<script src="JAVA/CRUD.js"></script>
+
+
+</body>
+
+</html>
