@@ -1,0 +1,25 @@
+#side-menu-opener i {
+  position: fixed;
+  top: 50vh;
+
+  color: white;
+  background-color: blue;
+}
+
+#side-menu {
+  color: white;
+  background-color: blue;
+
+  position: absolute;
+  left: -50vw;
+  top: 0;
+
+  width: 50vw;
+  height: 100vh;
+}
+
+#side-menu.side-menu-opened {
+  left: 0;
+
+  transition: left 1s;
+}

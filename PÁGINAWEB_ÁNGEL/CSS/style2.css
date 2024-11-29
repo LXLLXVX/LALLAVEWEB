@@ -552,7 +552,8 @@ button:hover {
   background-color: #333;
 }
 
-.new-footer div h3, .new-footer div p  {
+.new-footer div h3,
+.new-footer div p {
   text-align: center;
 }
 
@@ -572,7 +573,7 @@ button:hover {
   .footer p {
     font-size: 1em;
   }
-  
+
   .new-footer div {
     width: 14%;
   }
@@ -595,7 +596,7 @@ button:hover {
   .footer p {
     font-size: 0.9em;
   }
-  
+
   .new-footer div {
     width: 30%;
   }
@@ -623,11 +624,11 @@ button:hover {
   .footer p {
     font-size: 0.8em;
   }
-  
+
   .new-footer div {
     width: 40%;
   }
-  
+
 }
 
 /* PARALLAX */
@@ -642,6 +643,5 @@ button:hover {
 }
 
 .parallax:hover {
-  background-position: center center; 
+  background-position: center center;
 }
-

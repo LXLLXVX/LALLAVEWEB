@@ -1,0 +1,99 @@
+/* Estilos base */
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #002b5c; 
+}
+
+/* Encabezado y secciones */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: #003f7d; 
+}
+
+.section h1, .section h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+}
+
+/* Efecto Parallax */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.parallax-1 {
+    background-image: url('/fotos/teamcourt.jpg');
+}
+
+.parallax-2 {
+    background-image: url('/fotos/gcb.jpeg'); 
+}
+
+/* Responsividad para Parallax */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #002b5c;
+}
+
+.player-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.player-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.player-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #003f7d;
+}
+
+.player-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* MAS ESTILOS */
+.title-plantilla {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffd700; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+
