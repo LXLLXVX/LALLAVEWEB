@@ -47,6 +47,12 @@ function validarFormulario() {
   if (esValido) {
     alert("Formulario enviado correctamente.");
   }
+
+  localStorage.setItem("abonateds", JSON.stringify(abonated))
+  let aux = localStorage.getItem("abonated")  
+
+  let abonateds = JSON.parse(aux);
+
   return esValido;
 }
 
@@ -61,4 +67,80 @@ function limpiarErrores() {
   errorElements.forEach(function (errorElement) {
     errorElement.textContent = '';
   });
+
+
+
+  
+function readArrayFromLocalStorage(){
+let data = localStorage.getItem("abonateds")
+data.forEach(element => {
+  console.log(element)
+});
+}
+
+
+
+  let information = [];
+
+
+  const FORM_BUTTON = document.getElementById("submit-button")
+  FORM_BUTTON.addEventListener("click", function(){
+  introduceNewAbonatedAndShowAllAbonateds(e)
+ });
+  
+
+  function introduceNewAbonated(e){
+    console.log("ej")
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const type = e.target.type.value;
+    const abonated_number = e.target.abonated_number.value;
+
+  
+  information.push({
+      name: NAME,
+      email: EMAIL,
+      phone: phone,
+      type: TYPE,
+      abonated_number: abonated_number,
+    });
+  }
+  function introduceNewAbonatedAndShowAllAbonateds(e){
+    introduceNewAbonated(e);
+    showAbonatedsList();
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // for (let index = 0; index < 1000; index++) {
+  //   information[index] = index;
+  //   console.log(information)
+  // }
+
+
+
+
+
+
+
+  function saveDataintoLocalStorage(){
+
+  }
+
 }

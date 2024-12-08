@@ -18,7 +18,7 @@ header {
   padding: 20px 0;
   text-align: center;
   position: relative;
-  background-image: url('fotos/baloncesto-textura.jpg');
+  background-image: url('images/baloncesto-textura.jpg');
   background-size: cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -506,6 +506,7 @@ button:hover {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+
 }
 
 .footer .container {
@@ -545,11 +546,13 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 .new-footer div {
   width: 40%;
   background-color: #333;
+  list-style: none;
 }
 
 .new-footer div h3,
@@ -610,6 +613,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
   }
 
   .social-icons {
@@ -633,7 +637,7 @@ button:hover {
 
 /* PARALLAX */
 .parallax {
-  background-image: url("fotos/banner_campana_nuevos_abonados-T2425-600x200.gif");
+  background-image: url("images/banner_campana_nuevos_abonados-T2425-600x200.gif");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -642,6 +646,5 @@ button:hover {
   transition: background-position 0.5s ease-in-out;
 }
 
-.parallax:hover {
-  background-position: center center;
-}
+
+

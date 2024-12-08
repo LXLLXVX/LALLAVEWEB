@@ -32,11 +32,11 @@ body {
 }
 
 .parallax-1 {
-    background-image: url('/fotos/teamcourt.jpg');
+    background-image: url('/images/teamcourt.jpg');
 }
 
 .parallax-2 {
-    background-image: url('/fotos/gcb.jpeg'); 
+    background-image: url('/images/gcb.jpeg'); 
 }
 
 /* Responsividad para Parallax */
